@@ -118,7 +118,7 @@ async function findWeather(e) {
 async function findCity(cityName) {
   try {
     const res = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=6892dbfbfce06088744630b076df0b01`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=6892dbfbfce06088744630b076df0b01`
     );
     const data = await res.json();
     return data;
